@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hospital</title>
+  <link rel="stylesheet" href="hospital.css" />
+</head>
+<body>
+  <nav>
+    <img src="../NADI_Rachel Chen/Photos/nadi-logo.jpg" alt="Logo" />
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="doctor.html">Doctor</a></li>
+      <li><a href="hospital.html">Hospital</a></li>
+      <li><a href="medicine.html">Medicine</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+
+  <div class="buttons">
+    <button onclick="filter('all')">All</button>
+    <button onclick="filter('general')">General Practitioner</button>
+    <button onclick="filter('ped')">Pediatrician</button>
+    <button onclick="filter('cardio')">Cardiologist</button>
+    <button onclick="filter('neuro')">Neurologist</button>
+    <button onclick="filter('derm')">Dermatologist</button>
+  </div>
+
+  <div class="card-container">
+    <div class="card general">
+      <strong>dr. Lisa Permata</strong><br>
+      General Practitioner<br>
+      Harmony Medical Center
+    </div>
+    <div class="card ped">
+      <strong>dr. Andi Nugroho</strong><br>
+      Pediatrician<br>
+      Harmony Medical Center
+    </div>
+    <div class="card neuro">
+      <strong>dr. Siti Rahmawati</strong><br>
+      Neurologist<br>
+      Starlight General Hospital
+    </div>
+    <div class="card cardio">
+      <strong>dr. Rudi Santoso</strong><br>
+      Cardiologist<br>
+      Greenfield Children's Hospital
+    </div>
+    <div class="card neuro">
+      <strong>dr. Maya Lestari</strong><br>
+      Neurologist<br>
+      NeuroCare Specialist Hospital
+    </div>
+    <div class="card derm">
+      <strong>dr. Dimas Prakoso</strong><br>
+      Dermatologist<br>
+      Dermaluxe Skin & Aesthetic Clinic
+    </div>
+    <div class="card general">
+      <strong>dr. Intan Maharani</strong><br>
+      General Practitioner<br>
+      Starlight General Hospital
+    </div>
+    <div class="card ped">
+      <strong>dr. Reza Maulana</strong><br>
+      Pediatrician<br>
+      Dermaluxe Skin & Aesthetic Clinic
+    </div>
+    <div class="card cardio">
+      <strong>dr. Clara Wijaya</strong><br>
+      Cardiologist<br>
+      Heartwell Cardiac Institute
+    </div>
+    <div class="card derm">
+      <strong>dr. Budi Hartono</strong><br>
+      Dermatologist<br>
+      Dermaluxe Skin & Aesthetic Clinic
+    </div>
+  </div>
+
+  <script src="hospital.js"></script>
+</body>
+</html>

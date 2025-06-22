@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>    
+    <div class="regist">
+        <form action="" method="POST" class="regist-form">
+            <div class="input">
+                <label for="name" class="required">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="input">
+                <label for="email" class="required">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="input">
+                <label for="password" class="required">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="input">
+                <label for="age" class="required">Age</label>
+                <input type="number" name="age" id="age" required>
+            </div>
+            <div class="input">
+                <label for="gender">
+                    <input type="radio" name="gender" id="male">
+                    Male
+                </label>
+                <label for="gender">
+                    <input type="radio" name="gender" id="female">
+                    Female
+                </label>
+            </div>
+            <button type="button" class="button" onclick="validateForm()">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

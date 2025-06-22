@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medicine Store - NADI</title>
+  <link rel="stylesheet" href="medicine.css">
+</head>
+<body>
+
+  <nav>
+    <img src="../NADI_Rachel Chen/Photos/nadi-logo.jpg" alt="NADI Logo">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="doctor.html">Doctor</a></li>
+      <li><a href="hospital.html">Hospital</a></li>
+      <li><a href="medicine.html">Medicine</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+
+  <main class="store-container">
+    <h1>Buy Your Medicine</h1>
+    <div class="medicine-grid">
+      <div class="med-card" data-price="15000">
+        <h3>Paracetamol</h3>
+        <p>Rp15.000</p>
+        <div class="quantity">
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="qty">0</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="med-card" data-price="20000">
+        <h3>Amoxicillin</h3>
+        <p>Rp20.000</p>
+        <div class="quantity">
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="qty">0</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="med-card" data-price="25000">
+        <h3>Ibuprofen</h3>
+        <p>Rp25.000</p>
+        <div class="quantity">
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="qty">0</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+      </div>
+      <div class="med-card" data-price="30000">
+        <h3>Antasida</h3>
+        <p>Rp30.000</p>
+        <div class="quantity">
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="qty">0</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="total-section">
+      <div class="total-price">Total: Rp<span id="total">0</span></div>
+      <button id="purchase-btn" onclick="purchase()">Purchase</button>
+    </div>
+  </main>
+
+  <script src="medicine.js"></script>
+</body>
+</html>
